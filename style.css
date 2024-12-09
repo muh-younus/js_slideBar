@@ -15,9 +15,15 @@
 
     position: fixed;
     width: 260px;
+
     height: 100%;
-    left: 0;
+    left: -260px;
     background: #1b1b1b;
+    transition: left 0.4s ease;
+}
+.sider-bar.show {
+
+    left: 0;
 }
 
 .sider-bar .text{
@@ -56,6 +62,7 @@ nav ul li a{
     width: 100%;
     border-left: 3px solid transparent;
     position: relative;
+    transition: linear 0.4s;
 }
 
 nav ul li a:hover{
@@ -85,6 +92,7 @@ nav ul ul li a{
    color: #e6e6e6;
 }
 
+
 .feat-show .show{
 
     display: block;
@@ -108,5 +116,50 @@ nav ul li a span:hover{
 
     transform: translateY(-50%) rotate(-180deg);
 }
+
+.list-button{
+
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    background: #1b1b1b;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    transition: left 0.4s ease;
+    
+    
+
+}
+
+.list-button span{
+
+    font-size: 25px;
+   line-height: 40px;
+  
+    color: white;
+}
+.feat-show.feature{
+
+    display: block;
+}
+
+.service-show.service{
+
+    display: block;
+}
+
+.list-button.click{
+
+    /* transform: translateX(260px); */
+    left: 270px;
+   
+    
+}
+
+/* .list-button.click span::before{
+
+    content: '\food';
+} */
 
 
